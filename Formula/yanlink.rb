@@ -5,21 +5,21 @@ class Yanlink < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/lvyanxiang/YanLink/releases/download/v0.0.1/yanlink_0.0.1_darwin_arm64.tar.gz"
-      sha256 "57377ea165c0d689df7143a3323cccfd8fd035f5f3fcc3244d3b5d92f583a9e3"
+      url "https://github.com/lvyanxiang/yanlink-releases/releases/download/v0.0.1/yanlink_0.0.1_darwin_arm64.tar.gz"
+      sha256 "228b70405a6ee1df26e7a9479cd320d8eea2f86dc43bbb829619a834aae258b4"
     else
-      url "https://github.com/lvyanxiang/YanLink/releases/download/v0.0.1/yanlink_0.0.1_darwin_amd64.tar.gz"
-      sha256 "c96a2f3b491da17da48259b506358aff1ccc62f3adff057dd0189ed8799c8c87"
+      url "https://github.com/lvyanxiang/yanlink-releases/releases/download/v0.0.1/yanlink_0.0.1_darwin_amd64.tar.gz"
+      sha256 "c42f1fec81f8dd9595ed203a8c8707392062a55f1b16185e9db8ba6bc3154bd8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/lvyanxiang/YanLink/releases/download/v0.0.1/yanlink_0.0.1_linux_arm64.tar.gz"
-      sha256 "8d6684d484b5d1fe7749b104dc2cddfef7cd8e52ab7fe1a3c38ee4a2f57dd9ff"
+      url "https://github.com/lvyanxiang/yanlink-releases/releases/download/v0.0.1/yanlink_0.0.1_linux_arm64.tar.gz"
+      sha256 "a71349654d6fcbe2f73e04a83a4fe645a5c4a7f9a619d1d6bc9da6059ad03822"
     else
-      url "https://github.com/lvyanxiang/YanLink/releases/download/v0.0.1/yanlink_0.0.1_linux_amd64.tar.gz"
-      sha256 "dc9afe4d5d74a35e44cf603f6ce17bef07cebf4d867fe6027b6cc2f3b2704429"
+      url "https://github.com/lvyanxiang/yanlink-releases/releases/download/v0.0.1/yanlink_0.0.1_linux_amd64.tar.gz"
+      sha256 "88fbb06028ce0d354692124d0d0f0c37002a0b206e61f6b4c17397d8cb8f6822"
     end
   end
 
