@@ -1,33 +1,33 @@
 class Yanlink < Formula
   desc "Simple tunnel CLI for exposing local services"
   homepage "https://yanlink.lvyanxiang.com"
-  version "0.0.3"
+  version "0.0.4"
 
   bottle do
-    root_url "https://github.com/lvyanxiang/yanlink-releases/releases/download/v0.0.3"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "6ac800db0f191c4cf8b7197c39451dac827f48581f16b9253dd516efeb97452f"
-    sha256 cellar: :any_skip_relocation, sequoia:       "147d4bb30c10cb77bb2cfb3886dddc1ada9f30c5655a879df6261b80aa111cb5"
-    sha256 cellar: :any_skip_relocation, arm64_linux:   "1c2be1779599712f3ce861597df7d5fb805e90b9505b50f6a8f62b64282b8ef9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b2b9519395a5d37aaca373e3ec5cd85e6d8f39f6b4aeeb9e6ef69fd9e7db74f0"
+    root_url "https://github.com/lvyanxiang/yanlink-releases/releases/download/v0.0.4"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "8aeddca7e63e11538ead3bb62dfea6a4f7f3a5abe253584afdba4d214536d619"
+    sha256 cellar: :any_skip_relocation, sequoia:       "afe249468d37a8b1160000d0c1f3f68f30f4b1a32351d4c9ff5dca99ac7e40ec"
+    sha256 cellar: :any_skip_relocation, arm64_linux:   "8de8688621bcc2a9814184ad0d8ff8bd4f2028a06d80600263b0e5e9d7987fe4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4fbe1c5a1430ceb877e86c249ccdcb9f5f814c722492fbb61f136a72296ea70d"
   end
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/lvyanxiang/yanlink-releases/releases/download/v0.0.3/yanlink_0.0.3_darwin_arm64.tar.gz"
-      sha256 "749f365f3c8de4adfee874090afc19fbb99d7c80d8ea2b08013231dcb274f16f"
+      url "https://github.com/lvyanxiang/yanlink-releases/releases/download/v0.0.4/yanlink_0.0.4_darwin_arm64.tar.gz"
+      sha256 "e1f18e39c470eb035291372c635f6af81ec375c7ee55e593320815a33343bd3b"
     else
-      url "https://github.com/lvyanxiang/yanlink-releases/releases/download/v0.0.3/yanlink_0.0.3_darwin_amd64.tar.gz"
-      sha256 "95c5632168571c1e8a981df6ca4d0432cfc5a1e54e93bafc97deaecf1614af98"
+      url "https://github.com/lvyanxiang/yanlink-releases/releases/download/v0.0.4/yanlink_0.0.4_darwin_amd64.tar.gz"
+      sha256 "ddfd9bdf262deeb939ba0a1dc44b7723fa6c67426700e4d5574ccf596257338d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/lvyanxiang/yanlink-releases/releases/download/v0.0.3/yanlink_0.0.3_linux_arm64.tar.gz"
-      sha256 "66d983fe24849051bd374bbdce3326e3cd90e3c14dfa050afa1f4736c19338fd"
+      url "https://github.com/lvyanxiang/yanlink-releases/releases/download/v0.0.4/yanlink_0.0.4_linux_arm64.tar.gz"
+      sha256 "e68c16fb6d150815228a524f53f4a5d06119e375d5d83a7a72e65bc604a14800"
     else
-      url "https://github.com/lvyanxiang/yanlink-releases/releases/download/v0.0.3/yanlink_0.0.3_linux_amd64.tar.gz"
-      sha256 "de4c4b0a2ecf6880da1f0d39e897383ada16f6a9d32a8100f873503e2a8a8884"
+      url "https://github.com/lvyanxiang/yanlink-releases/releases/download/v0.0.4/yanlink_0.0.4_linux_amd64.tar.gz"
+      sha256 "484619bd01f3e4ac01cba6d51a624c91fb3e1ef1ce9a98ef25a236a4ff861926"
     end
   end
 
